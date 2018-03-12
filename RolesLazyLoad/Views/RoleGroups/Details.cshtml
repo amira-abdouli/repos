@@ -31,3 +31,10 @@
 
 
 @Html.Partial("RolesGroup", Model.RoleGroupsJoinRoles)
+
+
+
+<p>
+    @Html.ActionLink("add user", "AddUserToGroup", new { id = Model.ID })
+</p>
+@Html.Action("RoleGroupsJoinUsersList", new { id = Model.ID })
