@@ -1,0 +1,15 @@
+﻿@model IEnumerable<RolesLazyLoad.Models.RoleGroupsJoinUsers>
+
+<table class="table">
+    <tr>
+        <th>
+            Username
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.User.UserName</td>
+        </tr>
+    }
+</table>
